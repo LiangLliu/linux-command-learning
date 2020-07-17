@@ -19,3 +19,15 @@
 * 练习
     ![whereis练习](images/whereis_exercise.png)
 
+### locate 命令
+* 快速的搜索文件系统中是否有指定的文件
+* 用法
+  * ```locate [option](Search string)```
+* 示例
+  * ```locate pwd``` : 查询和搜索内容相关的所有文件
+* 练习
+    命名未找到
+    ![locate 练习](images/locate_exercise.png)
+
+### 练习完成
+![练习完成](images/exercise_complete.png)
