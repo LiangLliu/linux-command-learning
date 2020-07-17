@@ -48,4 +48,18 @@
 * cp练习
     ![cp命令练习](images/cp_exercise.png)
 
+### cat commond
+* 命令用法
+  * cat 三大功能
+    * 一次显示整个文件 ```cat filename```
+    * 从键盘创建一个文件```cat > filename``` 只能创建文件不能编辑已有文件
+    * 将几个文件合并为一个文件```cat file1 file2 > file``` 
+* 使用示例
+  * ```cat -n test1.txt test2.txt``` : 将test1文件中的内容加上行号，输入到test2中。
+  * ```cat -b test1.txt test2.txt``` : 将test1文件中的内容加上行号，空白行不加，输入到test2中。
+  * ```cat -n test1.txt test2.txt test.txt``` : test1和test2加上行号，合并到test中
+  * ```cat >test.txt <<EOF``` : 给文件添加内容，遇到EOF，添加结束
+  * ```tac test.txt``` : 反向显示文件内的内容
+* 练习
+    ![cat练习](images/cat_exercise.png)
 
