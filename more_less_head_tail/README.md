@@ -32,5 +32,17 @@
 * 练习
     ![head练习](imags/head_exercise.png)
 
+### tail command
+* 从指定位置开始将文件写到标准输出，跟head相反，查询尾部
+* 命令用法
+  * ```tail [option] file``` 
+* 示例
+  * ```tail -n 5 text.txt``` : 显示文件末尾5行
+  * ```tail -f test.txt``` : 循环查看文件内容
+  * ```tail -n +5 test.txt``` : 从第5行开始显示内容
+* 练习
+  ![tail练习](imags/tail_exercise.png)
 
+### 练习完成
+![练习完成](imags/exercise_complete.png)
 
