@@ -73,3 +73,6 @@
   * ```nl -n rz -w 3 test.txt``` : 行号补齐三位数，不够添加0输出
 * 练习
   ![nl命令练习](images/nl_exercise.png)
+
+### 练习完成
+![练习完成](images/exercise_complete.png)
