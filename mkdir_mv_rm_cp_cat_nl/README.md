@@ -37,4 +37,15 @@
 * 练习
     ![mv命令练习](images/mv_exercise.png)
 
-  
+### cp commond
+* 命令格式
+  * ```cp [options] source file directory``` 
+  * ```cp [options] -t directory source files```
+* 命令用法
+  * ```cp test.txt test``` : 复制单个文件到目标目录中，如果文件不存在，直接复制，如果文件存在，会询问是否要覆盖掉文件。
+  * ```cp -a test test01``` : 复制整个目录，如果文件存在时，整个源目录会被复制到目标目录中。
+  * ```cp -s test.txt test_link.txt``` : 复制文件建立一个连结文档
+* cp练习
+    ![cp命令练习](images/cp_exercise.png)
+
+
