@@ -8,7 +8,7 @@
    * ```mkdir -vp scf/{lib/,bin/,doc/{info,product}}}``` : 一个命令创建项目的目录结构 
  * 测试结果  
     ![练习结果](images/madir_exercise.png)
-    
+
 ### rm [options] file or directory
 * 命令用法
   * ```rm -f file or directory``` : 删除文件时忽略不存在的文件
@@ -24,3 +24,17 @@
   * ```rm -- -t``` : 删除以-t开头的文件
 * 练习示例
     ![练习结果](images/rm_exercise.png)    
+
+### mv [options] source file or directory  target file or directory
+* 命令用法
+  * ```mv test.txt test.log``` : 移动文件，文件名也会被替换
+  * ```mv test.txt test/ ```   : 将文件移动套test目录下
+  * ```mv  test.txt -b test.log```: 文件被覆盖前做备份
+  * ```mv t1.txt,t2.txt,t3.txt test/``` 等同于 ```mv -t test/ t1.txt,t2.txt,t3.txt```将多个文件移动到一个文件中
+  * ```mv -i test.txt test.log``` : 如果test.log存在，询问是否需要覆盖掉文件
+  * ```mv -f test.txt test.log``` : 强制覆盖文件 
+  * ```mv test1/ test2/ ``` : 文件目录移动
+* 练习
+    ![mv命令练习](images/mv_exercise.png)
+
+  
