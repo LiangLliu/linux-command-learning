@@ -37,7 +37,7 @@
 * 练习
     ![mv命令练习](images/mv_exercise.png)
 
-### cp commond
+### cp command
 * 命令格式
   * ```cp [options] source file directory``` 
   * ```cp [options] -t directory source files```
@@ -48,7 +48,7 @@
 * cp练习
     ![cp命令练习](images/cp_exercise.png)
 
-### cat commond
+### cat command
 * 命令用法
   * cat 三大功能
     * 一次显示整个文件 ```cat filename```
@@ -63,7 +63,7 @@
 * 练习
     ![cat练习](images/cat_exercise.png)
 
-### nl commond
+### nl command
 * 命令用法
   * 用来计算文件行号
   * ```nl [options] file```
