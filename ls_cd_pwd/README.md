@@ -20,5 +20,12 @@
   * ```cd ~```  : 返回到用户目录
   * ```cd -```  : 从当前目录返回到上一个目录
 * 练习如下
-  ![cd命令练习](../images/cd_exertise.png)
+  ![cd命令练习](../images/cd_exercise.png)
 
+### pwd [OPTION]
+* pwd命令用法
+  * ```pwd```    : 查看当前目录的路径
+  * ```pwd -P``` : 显示实际的物理路径，并非链路路径
+  * ```pwd -L``` : 当目录为链接路径时，显示链接路径
+* 练习如下
+  ![pwd命令练习](../images/pwd_exercise.jpg)
