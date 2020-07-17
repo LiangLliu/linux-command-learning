@@ -30,4 +30,6 @@
 * 练习如下
   ![pwd命令练习](images/pwd_exercise.jpg)
 
+### 练习完成
+
 ![练习完成](images/ls_cd_pwd_complete.png)
