@@ -63,3 +63,13 @@
 * 练习
     ![cat练习](images/cat_exercise.png)
 
+### nl commond
+* 命令用法
+  * 用来计算文件行号
+  * ```nl [options] file```
+* 使用示例
+  * ```nl test.txt``` : 列出文件的内容,空白行不会加行号
+  * ```nl test.txt``` : 列出文件的内容,空白行会加行号
+  * ```nl -n rz -w 3 test.txt``` : 行号补齐三位数，不够添加0输出
+* 练习
+  ![nl命令练习](images/nl_exercise.png)
