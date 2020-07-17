@@ -20,4 +20,17 @@
 * 练习
   ![less练习](imags/less_exercise.png)
 
+### head command
+* 用来显示档案的开头至标准输出
+* 命令用法
+  * ```head [oprion] [file]```
+* 示例
+  * ```head -n 5 test.txt``` : 显示文件的前5行
+  * ```head -c 20 test.txt``` :  显示文件的前20个字节
+  * ```head -c -20 test.txt``` :  显示文件除了最后20个字节的内容
+  * ```head -n -5 test.txt``` :  显示除了最后 5行的内容
+* 练习
+    ![head练习](imags/head_exercise.png)
+
+
 
