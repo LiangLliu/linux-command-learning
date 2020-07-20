@@ -18,12 +18,13 @@
   * ```时间单位``` : amin(最后N分钟访问的文件)、atime(最后*24小时内的文件)、cmin(最后n分钟改变文件状态)、ctime(最后*24小时改变文件状态)、mmin(最后n分钟改变数据)、mtime(最后*24小时改变文件数据)
 * 示例：
   * ```find ~ -atime -2``` : 查询用户目录中两天内修改过的文件
-  * ```fina ~ -name "*.log"``` :  查找用户目录中以```.log```结尾的文件
+  * ```find ~ -name "*.log"``` :  查找用户目录中以```.log```结尾的文件
   * ```find ~ -perm 777``` : 按照文件的权限来查找文件、
   * ```find ~ -type f -name "*.log"``` : 按照文件类型查找
   * ```find ~ -type d | sort``` :  查找当前所有目录并排序
   * ```find ~ -size +1000c -print``` : 按大小查找文件(查询大于 1000k 的文件)
 * 练习
+  * ![find练习](images/find_exercise.png)
 
 
 ### find 与exec使用
@@ -37,12 +38,12 @@
   * ```find . -name "*.log" -exec mv {} .. \;``` : 按照条件查询，并移动文件
   * ```find . -name "*.log" -exec cp {} test \;``` : 查找文件，并复制到指定目录
 * 练习
-
+  ![exec练习](images/exec_exercise.png)
 
 ### find 与 xargs 使用
 * 在exec使用时，会出现参数太长，导致移除的错误，xargs 就是解决这个问题。
 * 示例；
-  * ```find . -type -f -print | xargs file ``` : 查找系统中每一个普通文件，通过xargs来测试属于哪类文件
+  * ```find . -type f -print | xargs file ``` : 查找系统中每一个普通文件，通过xargs来测试属于哪类文件
   * ```find / -name "core" -print | xargs echo "" > /tmp/core.log``` : 查找内存信息转储文件(core dump) ,然后保存
   * ```find . -perm -7 -print | xargs chmod o-w``` : 在当前目录下查找所有用户具有刻度、可写权限
   * ```find . -type f -print | xargs grep "hostname" ``` : 使用grep命令在所有普通文件中搜索hostname这个单词
@@ -50,5 +51,6 @@
   * ```find . -name "*.log" | xargs -i mv {} test``` : 进行mv操作
   * ```find -name "*.log" | xargs -p -i mv {} ..``` : -p参数会提示让你确认是否执行后面的命令,y执行，n不执行
 * 练习：
+  ![xargs练习](images/xargs_exercise.png)
 
 
