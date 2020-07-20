@@ -5,3 +5,4 @@
 * [```more & less & head & tail```命令学习](more_less_head_tail/README.md)
 * [```which & whereis & locate```命令学习](which_whereis_locate/README.md)
 * [```find & xargs```命令学习](find_xargs/README.md)
+* [```wc & grep & Regular & express```命令学习](wc_grep_Regular_express/README.md)
