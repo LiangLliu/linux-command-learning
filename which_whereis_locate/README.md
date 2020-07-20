@@ -26,7 +26,7 @@
 * 示例
   * ```locate pwd``` : 查询和搜索内容相关的所有文件
 * 练习
-    命名未找到
+    命名未找到,**需要安装mlocate**
     ![locate 练习](images/locate_exercise.png)
 
 ### 练习完成
