@@ -16,4 +16,27 @@
 * 练习
     ![cut命令练习](images/cut_exercise.png)
 
+### paste
+* paste用于文件合并,合并文件的列
+* 用法
+  * ```paste [-s] [-d delimiters] file ...``` 
+* 示例：
+  * ```paste -s test2.txt``` : 合并文件的多行数据
+  * ```paste test.txt test2.txt``` : 合并两个文件，以列合并
+* 练习
+  ![paste练习](images/paste_exercise.png)  
+
+### tr
+* 用与转换/删除文件中的字符
+* 用法  
+    ```usage: tr [-Ccsu] string1 string2```  
+    ```tr [-Ccu] -d string1```  
+    ```tr [-Ccu] -s string1```  
+    ```tr [-Ccu] -ds string1 string2```  
+* 示例
+  * ```cat test2.txt | tr a-z A-Z``` : 将所有的小写字母转换为大写
+  * ```cat test2.txt | tr o M``` : 将字母 o 转换为 M
+* 练习
+    ![tr命令练习](images/tr_exercise.png)
+
 
