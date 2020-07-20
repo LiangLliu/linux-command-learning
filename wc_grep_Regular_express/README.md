@@ -1,4 +1,4 @@
-# wc & grep & Regular & express 命令学习
+# wc & grep & Regular expressions 命令学习
 ### wc命令
 * WC(Word count)用来统计指定文件中的字节数、字数、行数，并显示
   * ```WC [options] file
@@ -33,3 +33,24 @@
   * ```grep '[a-z]\{4\}' *.txt``` : 输出下列文件中知道4个连续小写的字符串行
 * 练习
     ![grep练习](images/grep_exercise.png)
+
+### Regular expressions (正则表达式)
+|   字符     | 意义           |
+|   :----:  |      :----     |
+|  ^word    | 以word开头的内容 | 
+|   word$   | 以word结尾的内容   |
+|   .	    | 代表一定有，一个任意字符  |
+|   \	    | 转义符，脱字符，将特殊符号转为为普通字符| 
+|   *       | 重复0或者N个正则字符      |
+|   [list]  | a[abc] 表示：可能为 aa,ab,ac  |
+|   [n-m]   | -表示 一个连续范围之间，与ASCII编码有关。|
+|   [^list] | ^为反向选择，表示不选[]中的内容          |
+
+* 示例：
+  * ```grep -n '^h' test2.txt``` : 必须以 h 开头
+  * ```grep -n ld$ test2.txt```  : 以 ld 结尾
+  * ```grep -n l.o test2.txt```  : l和o之间任意字符
+  * ```grep -n orl* test2.txt``` : or后面l相关的内容
+  * ```grep -n '[W|w]o' test2.txt``` : wo 或者 Wo的组合
+* 练习
+    ![正则表达式练习](images/regular_express.png)
